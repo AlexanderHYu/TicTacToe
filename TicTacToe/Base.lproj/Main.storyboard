@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EB5-KR-RtN">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20n-JR-vVs" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="82W-fd-ofq"/>
+                                            <constraint firstAttribute="width" constant="75" id="ayw-BO-YWn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gs-Fs-Zlm" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvU-vD-bxP" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="175" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l7-kb-QjU" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="88" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5i-R1-mZJ" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="0.0" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lct-B1-aNu" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="175" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJb-k0-RMP" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="-1" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm6-x0-DgW" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="88" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evl-Ep-35P" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="175" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dvU-vD-bxP" firstAttribute="baseline" secondItem="lct-B1-aNu" secondAttribute="baseline" id="00p-uN-ecQ"/>
+                                    <constraint firstItem="20n-JR-vVs" firstAttribute="top" secondItem="EB5-KR-RtN" secondAttribute="top" id="2tU-Yr-1SZ"/>
+                                    <constraint firstItem="dvU-vD-bxP" firstAttribute="top" secondItem="0Gs-Fs-Zlm" secondAttribute="bottom" constant="12" id="3Cl-wS-9YX"/>
+                                    <constraint firstItem="4l7-kb-QjU" firstAttribute="trailing" secondItem="lct-B1-aNu" secondAttribute="trailing" id="4KH-DL-0QW"/>
+                                    <constraint firstItem="20n-JR-vVs" firstAttribute="trailing" secondItem="0Gs-Fs-Zlm" secondAttribute="trailing" id="4co-uk-OUT"/>
+                                    <constraint firstItem="20n-JR-vVs" firstAttribute="firstBaseline" secondItem="K5i-R1-mZJ" secondAttribute="firstBaseline" id="7l4-PF-dZc"/>
+                                    <constraint firstItem="0Gs-Fs-Zlm" firstAttribute="firstBaseline" secondItem="4l7-kb-QjU" secondAttribute="firstBaseline" id="96P-Tt-L8h"/>
+                                    <constraint firstItem="4l7-kb-QjU" firstAttribute="leading" secondItem="lct-B1-aNu" secondAttribute="leading" id="9oI-cj-QMh"/>
+                                    <constraint firstItem="DJb-k0-RMP" firstAttribute="leading" secondItem="fm6-x0-DgW" secondAttribute="leading" id="AKd-Bw-cgf"/>
+                                    <constraint firstItem="K5i-R1-mZJ" firstAttribute="leading" secondItem="20n-JR-vVs" secondAttribute="trailing" constant="13" id="E16-7c-w6N"/>
+                                    <constraint firstAttribute="bottom" secondItem="dvU-vD-bxP" secondAttribute="bottom" id="F2c-5H-vCl"/>
+                                    <constraint firstItem="DJb-k0-RMP" firstAttribute="top" secondItem="EB5-KR-RtN" secondAttribute="top" constant="-1" id="MQE-59-W2K"/>
+                                    <constraint firstItem="0Gs-Fs-Zlm" firstAttribute="leading" secondItem="dvU-vD-bxP" secondAttribute="leading" id="OmL-cS-aC2"/>
+                                    <constraint firstItem="K5i-R1-mZJ" firstAttribute="trailing" secondItem="4l7-kb-QjU" secondAttribute="trailing" id="OsN-7M-AW9"/>
+                                    <constraint firstItem="DJb-k0-RMP" firstAttribute="trailing" secondItem="fm6-x0-DgW" secondAttribute="trailing" id="PGt-ld-0ki"/>
+                                    <constraint firstItem="dvU-vD-bxP" firstAttribute="firstBaseline" secondItem="lct-B1-aNu" secondAttribute="firstBaseline" id="QWe-xO-aR0"/>
+                                    <constraint firstItem="K5i-R1-mZJ" firstAttribute="leading" secondItem="4l7-kb-QjU" secondAttribute="leading" id="TIc-lT-Twy"/>
+                                    <constraint firstItem="4l7-kb-QjU" firstAttribute="firstBaseline" secondItem="fm6-x0-DgW" secondAttribute="firstBaseline" id="Vds-Wr-Q5X"/>
+                                    <constraint firstItem="DJb-k0-RMP" firstAttribute="leading" secondItem="K5i-R1-mZJ" secondAttribute="trailing" constant="12" id="YvU-kP-u9t"/>
+                                    <constraint firstAttribute="trailing" secondItem="fm6-x0-DgW" secondAttribute="trailing" id="bq9-zP-GjE"/>
+                                    <constraint firstItem="K5i-R1-mZJ" firstAttribute="centerX" secondItem="EB5-KR-RtN" secondAttribute="centerX" id="c10-fs-njs"/>
+                                    <constraint firstItem="lct-B1-aNu" firstAttribute="firstBaseline" secondItem="evl-Ep-35P" secondAttribute="firstBaseline" id="dRN-BN-LeQ"/>
+                                    <constraint firstItem="4l7-kb-QjU" firstAttribute="baseline" secondItem="fm6-x0-DgW" secondAttribute="baseline" id="eJ7-z2-5JZ"/>
+                                    <constraint firstItem="fm6-x0-DgW" firstAttribute="top" secondItem="DJb-k0-RMP" secondAttribute="bottom" constant="14" id="gVx-5Q-ozy"/>
+                                    <constraint firstItem="fm6-x0-DgW" firstAttribute="trailing" secondItem="evl-Ep-35P" secondAttribute="trailing" id="goy-iO-e28"/>
+                                    <constraint firstItem="0Gs-Fs-Zlm" firstAttribute="trailing" secondItem="dvU-vD-bxP" secondAttribute="trailing" id="jfc-G5-UgT"/>
+                                    <constraint firstItem="20n-JR-vVs" firstAttribute="leading" secondItem="0Gs-Fs-Zlm" secondAttribute="leading" id="mZW-ga-sol"/>
+                                    <constraint firstItem="20n-JR-vVs" firstAttribute="leading" secondItem="EB5-KR-RtN" secondAttribute="leading" id="oSI-Hx-mOP"/>
+                                    <constraint firstItem="0Gs-Fs-Zlm" firstAttribute="top" secondItem="20n-JR-vVs" secondAttribute="bottom" constant="13" id="pE1-LY-DjK"/>
+                                    <constraint firstItem="20n-JR-vVs" firstAttribute="baseline" secondItem="K5i-R1-mZJ" secondAttribute="baseline" id="plQ-eO-053"/>
+                                    <constraint firstItem="lct-B1-aNu" firstAttribute="baseline" secondItem="evl-Ep-35P" secondAttribute="baseline" id="pxf-Jb-n3z"/>
+                                    <constraint firstItem="fm6-x0-DgW" firstAttribute="leading" secondItem="evl-Ep-35P" secondAttribute="leading" id="sLy-TK-wZJ"/>
+                                    <constraint firstItem="0Gs-Fs-Zlm" firstAttribute="baseline" secondItem="4l7-kb-QjU" secondAttribute="baseline" id="tgc-Td-I0p"/>
+                                    <constraint firstItem="0Gs-Fs-Zlm" firstAttribute="centerY" secondItem="EB5-KR-RtN" secondAttribute="centerY" id="zH5-7m-Sjw"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIu-If-YAu">
+                                <rect key="frame" x="136" y="120" width="143" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="adt-Zx-JH9"/>
+                                    <constraint firstAttribute="width" constant="143" id="bI3-aO-V8j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="EB5-KR-RtN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="2cJ-xt-eAQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fIu-If-YAu" secondAttribute="trailing" constant="135" id="FK3-Sd-rR5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EB5-KR-RtN" secondAttribute="bottom" constant="289" id="Kiz-XC-g4x"/>
+                            <constraint firstItem="EB5-KR-RtN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cBz-yt-OJI"/>
+                            <constraint firstItem="fIu-If-YAu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="ltx-wx-87c"/>
+                            <constraint firstItem="EB5-KR-RtN" firstAttribute="centerX" secondItem="fIu-If-YAu" secondAttribute="centerX" id="sKZ-PS-blf"/>
+                            <constraint firstItem="fIu-If-YAu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="tNE-x4-9ZY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="CCE-Nf-pc0" appends="YES" id="MWL-Lb-fUe"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="EB5-KR-RtN" id="dpZ-GT-cho"/>
+                        <outlet property="gridLabel0" destination="20n-JR-vVs" id="A1k-5d-QQK"/>
+                        <outlet property="gridLabel1" destination="K5i-R1-mZJ" id="n4L-Rh-RFD"/>
+                        <outlet property="gridLabel2" destination="DJb-k0-RMP" id="mDW-VW-gYZ"/>
+                        <outlet property="gridLabel3" destination="0Gs-Fs-Zlm" id="gmN-nN-zFq"/>
+                        <outlet property="gridLabel4" destination="4l7-kb-QjU" id="q83-6A-X4s"/>
+                        <outlet property="gridLabel5" destination="fm6-x0-DgW" id="o9e-KI-u6d"/>
+                        <outlet property="gridLabel6" destination="dvU-vD-bxP" id="V3h-gF-Z0g"/>
+                        <outlet property="gridLabel7" destination="lct-B1-aNu" id="Ym0-of-FhB"/>
+                        <outlet property="gridLabel8" destination="evl-Ep-35P" id="8wC-Ss-OeQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CCE-Nf-pc0">
+                    <connections>
+                        <action selector="onTappedGridLabel:" destination="BYZ-38-t0r" id="iSE-nm-3X5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
